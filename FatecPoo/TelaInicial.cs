@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FatecPoo
 {
-    public partial class Form2 : Form
+    public partial class TelaInicial : Form
     {
-        public Form2()
+        public TelaInicial()
         {
             InitializeComponent();
 
