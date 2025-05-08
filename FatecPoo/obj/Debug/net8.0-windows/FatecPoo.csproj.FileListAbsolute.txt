@@ -1,0 +1,17 @@
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\bin\Debug\net8.0-windows\FatecPoo.exe
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\bin\Debug\net8.0-windows\FatecPoo.deps.json
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\bin\Debug\net8.0-windows\FatecPoo.runtimeconfig.json
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\bin\Debug\net8.0-windows\FatecPoo.dll
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\bin\Debug\net8.0-windows\FatecPoo.pdb
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.Form1.resources
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.csproj.GenerateResource.cache
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.AssemblyInfoInputs.cache
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.AssemblyInfo.cs
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.csproj.CoreCompileInputs.cache
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.sourcelink.json
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.dll
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\refint\FatecPoo.dll
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.pdb
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\FatecPoo.genruntimeconfig.cache
+C:\Users\vinic\source\repos\FatecPoo\FatecPoo\obj\Debug\net8.0-windows\ref\FatecPoo.dll
