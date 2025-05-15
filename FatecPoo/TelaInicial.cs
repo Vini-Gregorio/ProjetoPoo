@@ -12,6 +12,10 @@ namespace FatecPoo
 {
     public partial class TelaInicial : Form
     {
+        private void AbrirTela(Form Tela)
+        {
+            Tela.Show(); // ou ShowDialog() se quiser que a tela anterior fique travada
+        }
         public TelaInicial()
         {
             InitializeComponent();
@@ -45,17 +49,45 @@ namespace FatecPoo
             CentralizarLabel(lblNprisioneiro, pnlPrisioneiro);
             CentralizarLabel(lblCelaDis, panel1);
             CentralizarLabel(lblRelatorioPen, panel2);
+            CentralizarLabel(lblListPrisoneiro, panel5);
+            CentralizarLabel(lblRegPrisioneiro, panel6);
+            CentralizarLabel(lblPeniCela, panel7);
 
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblListPrisoneiro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRegPrisioneiro_Click(object sender, EventArgs e)
+        {
+            AbrirTela(new Form1());
         }
     }
 }
