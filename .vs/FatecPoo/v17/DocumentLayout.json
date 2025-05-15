@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs",
-              "RelativeDocumentMoniker": "FatecPoo\\Form1.cs",
-              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs",
-              "RelativeToolTip": "FatecPoo\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T13:08:36.35Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -42,7 +29,19 @@
               "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs [Projeto]",
               "RelativeToolTip": "FatecPoo\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T13:06:32.724Z",
+              "WhenOpened": "2025-05-08T12:56:36.093Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelaInicial.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\TelaInicial.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\TelaInicial.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\TelaInicial.cs [Projeto]",
+              "RelativeToolTip": "FatecPoo\\TelaInicial.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T12:54:18.175Z",
               "EditorCaption": " [Projeto]"
             }
           ]

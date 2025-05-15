@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FatecPoo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51f3c69d3cc8642dd7a038ce7333b7ff03d2ee49")]
 [assembly: System.Reflection.AssemblyProductAttribute("FatecPoo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FatecPoo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
