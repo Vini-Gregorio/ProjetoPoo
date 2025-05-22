@@ -3,12 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\cadastrardetento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\cadastrardetento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\cadastrardetento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\cadastrardetento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\estadoemocional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\estadoemocional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|C:\\Users\\vinic\\source\\repos\\FatecPoo\\fatecpoo\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\telainicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\cadastrardetento.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\cadastrardetento.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\detento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\detento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|c:\\users\\vinic\\source\\repos\\fatecpoo\\fatecpoo\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6F2C846-8DC6-4F45-9997-740A9D302DDE}|FatecPoo\\FatecPoo.csproj|solutionrelative:fatecpoo\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +66,185 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs",
-              "RelativeDocumentMoniker": "FatecPoo\\Form1.cs",
-              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs [Projeto]",
-              "RelativeToolTip": "FatecPoo\\Form1.cs [Projeto]",
+              "DocumentIndex": 5,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Conexao.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\Conexao.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Conexao.cs",
+              "RelativeToolTip": "FatecPoo\\Conexao.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAUwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T12:56:36.093Z",
+              "WhenOpened": "2025-05-21T22:22:25.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelaInicial.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\TelaInicial.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\TelaInicial.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\TelaInicial.cs",
+              "RelativeToolTip": "FatecPoo\\TelaInicial.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T22:21:28.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CadastrarDetento.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\CadastrarDetento.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\CadastrarDetento.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\CadastrarDetento.cs [Projeto]",
+              "RelativeToolTip": "FatecPoo\\CadastrarDetento.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T13:16:38.887Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Program.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\Program.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Program.cs",
+              "RelativeToolTip": "FatecPoo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:48:49.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CadastrarDetento.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\CadastrarDetento.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\CadastrarDetento.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\CadastrarDetento.cs",
+              "RelativeToolTip": "FatecPoo\\CadastrarDetento.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:05:32.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Login.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\Login.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Login.cs",
+              "RelativeToolTip": "FatecPoo\\Login.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwEIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T23:00:10.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Login.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Login.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\Login.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Login.cs [Projeto]",
+              "RelativeToolTip": "FatecPoo\\Login.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T22:57:21.549Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\Form1.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs",
+              "RelativeToolTip": "FatecPoo\\Form1.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:29:42.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EstadoEmocional.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\EstadoEmocional.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\EstadoEmocional.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\EstadoEmocional.cs",
+              "RelativeToolTip": "FatecPoo\\EstadoEmocional.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:17:59.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TelaInicial.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\TelaInicial.cs",
               "RelativeDocumentMoniker": "FatecPoo\\TelaInicial.cs",
               "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\TelaInicial.cs [Projeto]",
               "RelativeToolTip": "FatecPoo\\TelaInicial.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T12:54:18.175Z",
+              "WhenOpened": "2025-05-15T13:39:53.067Z",
               "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\Form1.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Form1.cs [Projeto]",
+              "RelativeToolTip": "FatecPoo\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:40:28.497Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CadastrarDetento.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\CadastrarDetento.Designer.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\CadastrarDetento.Designer.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\CadastrarDetento.Designer.cs",
+              "RelativeToolTip": "FatecPoo\\CadastrarDetento.Designer.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T13:15:18.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Pessoa.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\Pessoa.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Pessoa.cs",
+              "RelativeToolTip": "FatecPoo\\Pessoa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:29:06.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Detento.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Detento.cs",
+              "RelativeDocumentMoniker": "FatecPoo\\Detento.cs",
+              "ToolTip": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\Detento.cs",
+              "RelativeToolTip": "FatecPoo\\Detento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:29:19.096Z",
+              "EditorCaption": ""
             }
           ]
         }

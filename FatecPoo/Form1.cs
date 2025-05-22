@@ -2,7 +2,7 @@ namespace FatecPoo
 {
     public partial class Form1 : Form
     {
-        List<Pessoa> listadedetentos = new List<Pessoa>();
+        List<Detento> listadedetentos = new List<Detento>();
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace FatecPoo
 
         private void btnCriar_Click(object sender, EventArgs e)
         {
-            Pessoa p = new Pessoa();
+            Detento p = new Detento();
             int idade;
             if (!int.TryParse(txtNascimento.Text, out idade))
             {
@@ -79,7 +79,7 @@ namespace FatecPoo
         {
             int index = listDetentos.SelectedIndex;
             int idade;
-           
+
             if (index >= 0)
             {
                 if (!int.TryParse(txtNascimento.Text, out idade))
@@ -97,6 +97,11 @@ namespace FatecPoo
                 MessageBox.Show("Selecione uma pessoa da lista.");
             }
             LimparCampos();
+        }
+
+        private void labelEmail_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

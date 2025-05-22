@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace FatecPoo
 {
-    class Pessoa
+   public abstract class Pessoa
     {
-        public string Nome { get; set; }
-        public string Email { get; set; }
+        public int Id { get; set; }
+        public string? Nome { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public string? Email { get; set; }
         //idade nesse  contexto
         public int Nascimento { get; set; }
 

@@ -33,12 +33,13 @@
             txtEmail = new TextBox();
             labelNome = new Label();
             labelNascimento = new Label();
-            labelEmail = new Label();
             btnCriar = new Button();
             btnAtualizar = new Button();
             btnDeletar = new Button();
             Listar = new Button();
             listDetentos = new ListBox();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // txtNome
@@ -82,15 +83,6 @@
             labelNascimento.Text = "Nascimento";
             labelNascimento.Click += labelNascimento_Click;
             // 
-            // labelEmail
-            // 
-            labelEmail.AutoSize = true;
-            labelEmail.Location = new Point(61, 202);
-            labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(36, 15);
-            labelEmail.TabIndex = 5;
-            labelEmail.Text = "Email";
-            // 
             // btnCriar
             // 
             btnCriar.Location = new Point(228, 52);
@@ -103,7 +95,7 @@
             // 
             // btnAtualizar
             // 
-            btnAtualizar.Location = new Point(308, 249);
+            btnAtualizar.Location = new Point(331, 141);
             btnAtualizar.Name = "btnAtualizar";
             btnAtualizar.Size = new Size(120, 23);
             btnAtualizar.TabIndex = 7;
@@ -113,7 +105,7 @@
             // 
             // btnDeletar
             // 
-            btnDeletar.Location = new Point(464, 249);
+            btnDeletar.Location = new Point(483, 141);
             btnDeletar.Name = "btnDeletar";
             btnDeletar.Size = new Size(125, 23);
             btnDeletar.TabIndex = 8;
@@ -123,7 +115,7 @@
             // 
             // Listar
             // 
-            Listar.Location = new Point(634, 249);
+            Listar.Location = new Point(634, 141);
             Listar.Name = "Listar";
             Listar.Size = new Size(122, 23);
             Listar.TabIndex = 9;
@@ -135,22 +127,39 @@
             // 
             listDetentos.FormattingEnabled = true;
             listDetentos.ItemHeight = 15;
-            listDetentos.Location = new Point(332, 33);
+            listDetentos.Location = new Point(500, 12);
             listDetentos.Name = "listDetentos";
-            listDetentos.Size = new Size(380, 184);
+            listDetentos.Size = new Size(256, 64);
             listDetentos.TabIndex = 10;
+            // 
+            // label1
+            // 
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(100, 23);
+            label1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(277, 12);
+            label2.Name = "label2";
+            label2.Size = new Size(128, 15);
+            label2.TabIndex = 11;
+            label2.Text = "CADASTRAR DETENTO";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(768, 450);
+            ClientSize = new Size(760, 450);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(listDetentos);
             Controls.Add(Listar);
             Controls.Add(btnDeletar);
             Controls.Add(btnAtualizar);
             Controls.Add(btnCriar);
-            Controls.Add(labelEmail);
             Controls.Add(labelNascimento);
             Controls.Add(labelNome);
             Controls.Add(txtEmail);
@@ -170,11 +179,12 @@
         private TextBox txtEmail;
         private Label labelNome;
         private Label labelNascimento;
-        private Label labelEmail;
         private Button btnCriar;
         private Button btnAtualizar;
         private Button btnDeletar;
         private Button Listar;
         private ListBox listDetentos;
+        private Label label1;
+        private Label label2;
     }
 }

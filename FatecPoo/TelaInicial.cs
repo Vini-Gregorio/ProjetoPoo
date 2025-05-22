@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace FatecPoo
 {
@@ -18,15 +20,41 @@ namespace FatecPoo
         }
         public TelaInicial()
         {
+
             InitializeComponent();
 
-            string Nprisioneiro = "100";
-            lblNprisioneiro.Text = $" {Nprisioneiro}";
+     
+            MostrarTotalDetentos();
             string RelatorioPen = "50";
             lblRelatorioPen.Text = $"{RelatorioPen}";
             string CelaDis = "40";
             lblCelaDis.Text = $"{CelaDis}";
+        }
 
+        private void MostrarTotalDetentos()
+        {
+            Conexao conexao = new Conexao();
+
+            if (conexao.AbrirConexao())
+            {
+                string query = "SELECT COUNT(*) FROM usuario";
+
+                try
+                {
+                    MySqlCommand cmd = new MySqlCommand(query, conexao.ObterConexao());
+                    int total = Convert.ToInt32(cmd.ExecuteScalar()); // Retorna um único valor
+
+                    lblNprisioneiro.Text = $"Total de usuários: {total}";
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao contar usuários: " + ex.Message);
+                }
+                finally
+                {
+                    conexao.FecharConexao();
+                }
+            }
         }
 
         private void CentralizarLabel(Label lbl, Panel pnl)
@@ -87,7 +115,7 @@ namespace FatecPoo
 
         private void lblRegPrisioneiro_Click(object sender, EventArgs e)
         {
-            AbrirTela(new Form1());
+            AbrirTela(new CadastrarDetento());
         }
     }
 }
