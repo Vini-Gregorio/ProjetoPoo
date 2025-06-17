@@ -20,7 +20,7 @@ namespace FatecPoo
         public Login()
         {
             InitializeComponent();
-            
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -28,14 +28,17 @@ namespace FatecPoo
 
         }
 
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            try { 
-            string con = "server =127.0.0.1; user =root; database =prisionadm; password=";
-            MySqlConnection mySqlConnection = new MySqlConnection(con);
+     
 
-            string username = txtNome.Text.ToString();
-            string password = txtSenha.Text.ToString();
+        private void btnEntrar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string con = "server =127.0.0.1; user =root; database =prisionadm; password=";
+                MySqlConnection mySqlConnection = new MySqlConnection(con);
+
+                string username = txtNome.Text.ToString();
+                string password = txtSenha.Text.ToString();
 
                 if (String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password))
                 {
@@ -63,11 +66,10 @@ namespace FatecPoo
                 }
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
-
         }
     }
 }

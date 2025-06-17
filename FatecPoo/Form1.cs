@@ -1,11 +1,17 @@
+ï»¿using FatecPoo;
+
 namespace FatecPoo
 {
     public partial class Form1 : Form
     {
-        List<Detento> listadedetentos = new List<Detento>();
-        public Form1()
+        List<Pessoa> listadedetentos = new List<Pessoa>();
+        private ListaDePrisoneiros telaLista;
+        private static int contadorId = 1;
+        public Form1(ListaDePrisoneiros tela)
         {
             InitializeComponent();
+   
+            telaLista = tela;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,82 +32,49 @@ namespace FatecPoo
         {
             txtNome.Text = "";
             txtNascimento.Text = "";
-            txtEmail.Text = "";
+           
         }
 
         private void btnCriar_Click(object sender, EventArgs e)
         {
-            Detento p = new Detento();
-            int idade;
-            if (!int.TryParse(txtNascimento.Text, out idade))
+            DateTime nascimento;
+            if (!DateTime.TryParse(txtNascimento.Text, out nascimento))
             {
-                MessageBox.Show("Idade inválida. Digite apenas números.");
+                MessageBox.Show("Data de nascimento invÃ¡lida.");
                 return;
             }
-            p.Nome = txtNome.Text;
-            p.Nascimento = idade;
-            p.Email = txtEmail.Text;
+
+            Pessoa p = new Pessoa
+            {
+                Id = contadorId++,
+                Nome = txtNome.Text,
+                Nascimento = nascimento
+                // DataDeRegistro Ã© automÃ¡tico
+            };
 
             listadedetentos.Add(p);
-
-            MessageBox.Show(" Detento adicionado ");
+            telaLista.AdicionarNaLista(p); // Correto: chama o mÃ©todo da tela
+            ExameCriminal exame = new ExameCriminal(p);
+            exame.ShowDialog();
+            MessageBox.Show("Detento adicionado.");
             LimparCampos();
-
         }
 
         private void Listar_Click(object sender, EventArgs e)
         {
-            listDetentos.Items.Clear();
-
-            foreach (var p in listadedetentos)
-            {
-                listDetentos.Items.Add($"Nome: {p.Nome}, Idade: {p.Nascimento}, Email: {p.Email}");
-            }
-            LimparCampos();
+            
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            int index = listDetentos.SelectedIndex;
-            if (index >= 0)
-            {
-                listadedetentos.RemoveAt(index);
-                MessageBox.Show("Pessoa removida!");
-                LimparCampos();
-            }
-            else
-            {
-                MessageBox.Show("Selecione uma pessoa da lista.");
-            }
+           
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            int index = listDetentos.SelectedIndex;
-            int idade;
-
-            if (index >= 0)
-            {
-                if (!int.TryParse(txtNascimento.Text, out idade))
-                {
-                    MessageBox.Show("Idade inválida. Digite apenas números.");
-                    return;
-                }
-                listadedetentos[index].Nome = txtNome.Text;
-                listadedetentos[index].Email = txtEmail.Text;
-                listadedetentos[index].Nascimento = idade;
-
-            }
-            else
-            {
-                MessageBox.Show("Selecione uma pessoa da lista.");
-            }
-            LimparCampos();
-        }
-
-        private void labelEmail_Click(object sender, EventArgs e)
-        {
-
+          
+        
         }
     }
 }
+

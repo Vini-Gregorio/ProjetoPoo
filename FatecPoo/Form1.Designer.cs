@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -30,16 +31,12 @@
         {
             txtNome = new TextBox();
             txtNascimento = new TextBox();
-            txtEmail = new TextBox();
             labelNome = new Label();
             labelNascimento = new Label();
             btnCriar = new Button();
             btnAtualizar = new Button();
             btnDeletar = new Button();
             Listar = new Button();
-            listDetentos = new ListBox();
-            label1 = new Label();
-            label2 = new Label();
             SuspendLayout();
             // 
             // txtNome
@@ -56,13 +53,6 @@
             txtNascimento.Name = "txtNascimento";
             txtNascimento.Size = new Size(134, 23);
             txtNascimento.TabIndex = 1;
-            // 
-            // txtEmail
-            // 
-            txtEmail.Location = new Point(61, 229);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(134, 23);
-            txtEmail.TabIndex = 2;
             // 
             // labelNome
             // 
@@ -85,9 +75,9 @@
             // 
             // btnCriar
             // 
-            btnCriar.Location = new Point(228, 52);
+            btnCriar.Location = new Point(231, 81);
             btnCriar.Name = "btnCriar";
-            btnCriar.Size = new Size(75, 23);
+            btnCriar.Size = new Size(120, 23);
             btnCriar.TabIndex = 6;
             btnCriar.Text = "Criar";
             btnCriar.UseVisualStyleBackColor = true;
@@ -95,7 +85,7 @@
             // 
             // btnAtualizar
             // 
-            btnAtualizar.Location = new Point(331, 141);
+            btnAtualizar.Location = new Point(231, 109);
             btnAtualizar.Name = "btnAtualizar";
             btnAtualizar.Size = new Size(120, 23);
             btnAtualizar.TabIndex = 7;
@@ -105,9 +95,9 @@
             // 
             // btnDeletar
             // 
-            btnDeletar.Location = new Point(483, 141);
+            btnDeletar.Location = new Point(231, 138);
             btnDeletar.Name = "btnDeletar";
-            btnDeletar.Size = new Size(125, 23);
+            btnDeletar.Size = new Size(120, 23);
             btnDeletar.TabIndex = 8;
             btnDeletar.Text = "Deletar";
             btnDeletar.UseVisualStyleBackColor = true;
@@ -115,7 +105,7 @@
             // 
             // Listar
             // 
-            Listar.Location = new Point(634, 141);
+            Listar.Location = new Point(231, 167);
             Listar.Name = "Listar";
             Listar.Size = new Size(122, 23);
             Listar.TabIndex = 9;
@@ -123,46 +113,17 @@
             Listar.UseVisualStyleBackColor = true;
             Listar.Click += Listar_Click;
             // 
-            // listDetentos
-            // 
-            listDetentos.FormattingEnabled = true;
-            listDetentos.ItemHeight = 15;
-            listDetentos.Location = new Point(500, 12);
-            listDetentos.Name = "listDetentos";
-            listDetentos.Size = new Size(256, 64);
-            listDetentos.TabIndex = 10;
-            // 
-            // label1
-            // 
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(100, 23);
-            label1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(277, 12);
-            label2.Name = "label2";
-            label2.Size = new Size(128, 15);
-            label2.TabIndex = 11;
-            label2.Text = "CADASTRAR DETENTO";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(760, 450);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(listDetentos);
+            ClientSize = new Size(372, 207);
             Controls.Add(Listar);
             Controls.Add(btnDeletar);
             Controls.Add(btnAtualizar);
             Controls.Add(btnCriar);
             Controls.Add(labelNascimento);
             Controls.Add(labelNome);
-            Controls.Add(txtEmail);
             Controls.Add(txtNascimento);
             Controls.Add(txtNome);
             Name = "Form1";
@@ -176,15 +137,11 @@
 
         private TextBox txtNome;
         private TextBox txtNascimento;
-        private TextBox txtEmail;
         private Label labelNome;
         private Label labelNascimento;
         private Button btnCriar;
         private Button btnAtualizar;
         private Button btnDeletar;
         private Button Listar;
-        private ListBox listDetentos;
-        private Label label1;
-        private Label label2;
     }
 }

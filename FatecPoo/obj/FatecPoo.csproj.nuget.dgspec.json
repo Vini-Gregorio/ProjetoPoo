@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\FatecPoo.csproj": {}
+    "C:\\Users\\kassi\\OneDrive\\Documentos\\Github\\ProjetoPoo\\FatecPoo\\FatecPoo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\FatecPoo.csproj": {
+    "C:\\Users\\kassi\\OneDrive\\Documentos\\Github\\ProjetoPoo\\FatecPoo\\FatecPoo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\FatecPoo.csproj",
+        "projectUniqueName": "C:\\Users\\kassi\\OneDrive\\Documentos\\Github\\ProjetoPoo\\FatecPoo\\FatecPoo.csproj",
         "projectName": "FatecPoo",
-        "projectPath": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\FatecPoo.csproj",
-        "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinic\\source\\repos\\FatecPoo\\FatecPoo\\obj\\",
+        "projectPath": "C:\\Users\\kassi\\OneDrive\\Documentos\\Github\\ProjetoPoo\\FatecPoo\\FatecPoo.csproj",
+        "packagesPath": "C:\\Users\\kassi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kassi\\OneDrive\\Documentos\\Github\\ProjetoPoo\\FatecPoo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kassi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

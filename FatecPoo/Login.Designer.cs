@@ -28,66 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             label2 = new Label();
             txtNome = new TextBox();
             txtSenha = new TextBox();
             btnEntrar = new Button();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(348, 96);
-            label1.Name = "label1";
-            label1.Size = new Size(40, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Nome";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(352, 189);
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(137, 228);
             label2.Name = "label2";
-            label2.Size = new Size(39, 15);
+            label2.Size = new Size(51, 20);
             label2.TabIndex = 1;
             label2.Text = "Senha";
+            label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(151, 140);
+            txtNome.BackColor = Color.Silver;
+            txtNome.BorderStyle = BorderStyle.FixedSingle;
+            txtNome.Location = new Point(43, 168);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(449, 23);
+            txtNome.Size = new Size(257, 23);
             txtNome.TabIndex = 2;
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(151, 230);
+            txtSenha.BackColor = Color.DarkGray;
+            txtSenha.BorderStyle = BorderStyle.FixedSingle;
+            txtSenha.Location = new Point(43, 275);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(449, 23);
+            txtSenha.Size = new Size(257, 23);
             txtSenha.TabIndex = 3;
             // 
             // btnEntrar
             // 
-            btnEntrar.Location = new Point(416, 299);
+            btnEntrar.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnEntrar.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnEntrar.FlatStyle = FlatStyle.Popup;
+            btnEntrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEntrar.Image = (Image)resources.GetObject("btnEntrar.Image");
+            btnEntrar.Location = new Point(119, 349);
             btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(184, 23);
-            btnEntrar.TabIndex = 4;
+            btnEntrar.Size = new Size(96, 29);
+            btnEntrar.TabIndex = 5;
             btnEntrar.Text = "Entrar";
             btnEntrar.UseVisualStyleBackColor = true;
-            btnEntrar.Click += btnEntrar_Click;
+            btnEntrar.Click += btnEntrar_Click_1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(137, 124);
+            label1.Name = "label1";
+            label1.Size = new Size(52, 20);
+            label1.TabIndex = 6;
+            label1.Text = "Nome";
+            label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(351, 450);
+            Controls.Add(label1);
             Controls.Add(btnEntrar);
             Controls.Add(txtSenha);
             Controls.Add(txtNome);
             Controls.Add(label2);
-            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Login";
+            RightToLeft = RightToLeft.No;
             Text = "Login";
             Load += Login_Load;
             ResumeLayout(false);
@@ -95,11 +112,10 @@
         }
 
         #endregion
-
-        private Label label1;
         private Label label2;
         private TextBox txtNome;
         private TextBox txtSenha;
         private Button btnEntrar;
+        private Label label1;
     }
 }

@@ -4,10 +4,31 @@
     <Compile Update="CadastrarDetento.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Comandos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CriarCela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ExameCriminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ExamePsicotecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FichaPrisoneiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ListaDePrisoneiros.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RegistrarPrisao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="TelaInicial.cs">
