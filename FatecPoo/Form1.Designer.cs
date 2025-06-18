@@ -34,30 +34,35 @@
             labelNome = new Label();
             labelNascimento = new Label();
             btnCriar = new Button();
-            btnAtualizar = new Button();
-            btnDeletar = new Button();
-            Listar = new Button();
+            groupBox1 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(61, 89);
+            txtNome.BackColor = SystemColors.WindowFrame;
+            txtNome.BorderStyle = BorderStyle.None;
+            txtNome.Location = new Point(24, 80);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(134, 23);
+            txtNome.Size = new Size(134, 16);
             txtNome.TabIndex = 0;
             txtNome.TextChanged += textBox1_TextChanged;
             // 
             // txtNascimento
             // 
-            txtNascimento.Location = new Point(61, 157);
+            txtNascimento.BackColor = SystemColors.WindowFrame;
+            txtNascimento.BorderStyle = BorderStyle.None;
+            txtNascimento.Location = new Point(24, 184);
             txtNascimento.Name = "txtNascimento";
-            txtNascimento.Size = new Size(134, 23);
+            txtNascimento.Size = new Size(134, 16);
             txtNascimento.TabIndex = 1;
             // 
             // labelNome
             // 
             labelNome.AutoSize = true;
-            labelNome.Location = new Point(61, 56);
+            labelNome.Location = new Point(24, 47);
             labelNome.Name = "labelNome";
             labelNome.Size = new Size(40, 15);
             labelNome.TabIndex = 3;
@@ -66,7 +71,7 @@
             // labelNascimento
             // 
             labelNascimento.AutoSize = true;
-            labelNascimento.Location = new Point(61, 127);
+            labelNascimento.Location = new Point(24, 154);
             labelNascimento.Name = "labelNascimento";
             labelNascimento.Size = new Size(71, 15);
             labelNascimento.TabIndex = 4;
@@ -75,60 +80,54 @@
             // 
             // btnCriar
             // 
-            btnCriar.Location = new Point(231, 81);
+            btnCriar.BackColor = SystemColors.ActiveCaptionText;
+            btnCriar.FlatStyle = FlatStyle.Flat;
+            btnCriar.ForeColor = SystemColors.ButtonShadow;
+            btnCriar.Location = new Point(211, 239);
             btnCriar.Name = "btnCriar";
             btnCriar.Size = new Size(120, 23);
             btnCriar.TabIndex = 6;
             btnCriar.Text = "Criar";
-            btnCriar.UseVisualStyleBackColor = true;
+            btnCriar.UseVisualStyleBackColor = false;
             btnCriar.Click += btnCriar_Click;
             // 
-            // btnAtualizar
+            // groupBox1
             // 
-            btnAtualizar.Location = new Point(231, 109);
-            btnAtualizar.Name = "btnAtualizar";
-            btnAtualizar.Size = new Size(120, 23);
-            btnAtualizar.TabIndex = 7;
-            btnAtualizar.Text = "Atualizar";
-            btnAtualizar.UseVisualStyleBackColor = true;
-            btnAtualizar.Click += btnAtualizar_Click;
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Location = new Point(184, 29);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(165, 187);
+            groupBox1.TabIndex = 7;
+            groupBox1.TabStop = false;
             // 
-            // btnDeletar
+            // pictureBox1
             // 
-            btnDeletar.Location = new Point(231, 138);
-            btnDeletar.Name = "btnDeletar";
-            btnDeletar.Size = new Size(120, 23);
-            btnDeletar.TabIndex = 8;
-            btnDeletar.Text = "Deletar";
-            btnDeletar.UseVisualStyleBackColor = true;
-            btnDeletar.Click += btnDeletar_Click;
-            // 
-            // Listar
-            // 
-            Listar.Location = new Point(231, 167);
-            Listar.Name = "Listar";
-            Listar.Size = new Size(122, 23);
-            Listar.TabIndex = 9;
-            Listar.Text = "Listar";
-            Listar.UseVisualStyleBackColor = true;
-            Listar.Click += Listar_Click;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Location = new Point(0, 15);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(165, 166);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(372, 207);
-            Controls.Add(Listar);
-            Controls.Add(btnDeletar);
-            Controls.Add(btnAtualizar);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(372, 283);
+            Controls.Add(groupBox1);
             Controls.Add(btnCriar);
             Controls.Add(labelNascimento);
             Controls.Add(labelNome);
             Controls.Add(txtNascimento);
             Controls.Add(txtNome);
+            ForeColor = SystemColors.ButtonFace;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -140,8 +139,7 @@
         private Label labelNome;
         private Label labelNascimento;
         private Button btnCriar;
-        private Button btnAtualizar;
-        private Button btnDeletar;
-        private Button Listar;
+        private GroupBox groupBox1;
+        private PictureBox pictureBox1;
     }
 }

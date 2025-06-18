@@ -16,10 +16,9 @@ namespace FatecPoo
         public string Regime { get; set; }
         public string Perigo { get; set; }
         public string PerfilPsicologico { get; set; }
+        public Image Foto { get; set; }
+
         public int Idade
-
-
-
         {
             get
             {
