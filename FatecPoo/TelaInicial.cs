@@ -210,7 +210,7 @@ namespace FatecPoo
 
         }
 
-      
+
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
@@ -244,6 +244,12 @@ namespace FatecPoo
         {
             ListaDePrisoneiros listaDePrisoneiros = new ListaDePrisoneiros(); // instanciando a nova tela
             listaDePrisoneiros.Show(); // abre sem bloquear a tela atual
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ListaDePrisao listaDePrisao = new ListaDePrisao();
+            listaDePrisao.Show();
         }
     }
 }

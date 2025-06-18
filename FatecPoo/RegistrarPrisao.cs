@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace FatecPoo
 {
-
     public partial class RegistrarPrisao : Form
     {
-        private void SalvarNoBanco(string nome, string endereço, string nivelseguranca)
+        private void SalvarNoBanco(string nome, string endereco, string nivelseguranca)
         {
             string conexao = "server=localhost;database=prisionadm;uid=root;pwd=;";
             using (MySqlConnection conn = new MySqlConnection(conexao))
@@ -23,11 +21,11 @@ namespace FatecPoo
                 try
                 {
                     conn.Open();
-                    string sql = "INSERT INTO prisao (nome, endereço, nivelseguranca) VALUES (@nome, @endereço, @nivel)";
+                    string sql = "INSERT INTO prisao (nome, endereco, nivelseguranca) VALUES (@nome, @endereco, @nivel)";
                     using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                     {
                         cmd.Parameters.AddWithValue("@nome", nome);
-                        cmd.Parameters.AddWithValue("@endereço", endereço);
+                        cmd.Parameters.AddWithValue("@endereco", endereco);
                         cmd.Parameters.AddWithValue("@nivel", nivelseguranca);
 
                         cmd.ExecuteNonQuery();
@@ -40,74 +38,45 @@ namespace FatecPoo
                 }
             }
         }
+
         public RegistrarPrisao()
         {
             InitializeComponent();
         }
 
-        private void RegistrarPrisao_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void lblSalvar_Click(object sender, EventArgs e)
         {
             string nome = textNomePrisao.Text;
-            string endereço = textEndereçoPrisao.Text;
-            if (string.IsNullOrWhiteSpace(nome) || string.IsNullOrWhiteSpace(endereço))
+            string endereco = textEndereçoPrisao.Text;  // <-- Aqui pode deixar o nome do textbox como está, mas a variável C# mudou para "endereco"
+
+            if (string.IsNullOrWhiteSpace(nome) || string.IsNullOrWhiteSpace(endereco))
             {
                 MessageBox.Show("Preencha todos os campos");
                 return;
             }
-            string nivelsegurança = "";
+
+            string nivelseguranca = "";
             if (rbMinima.Checked)
             {
-                nivelsegurança = "Minima";
+                nivelseguranca = "Minima";
             }
             else if (rbMedia.Checked)
             {
-                nivelsegurança = "Media";
+                nivelseguranca = "Media";
             }
             else if (rbMaxima.Checked)
             {
-                nivelsegurança = "Maxima";
+                nivelseguranca = "Maxima";
             }
             else
             {
                 MessageBox.Show("Selecione um nível de segurança.");
                 return;
             }
-            SalvarNoBanco(nome, endereço, nivelsegurança);
+
+            SalvarNoBanco(nome, endereco, nivelseguranca);
         }
+
+        // Demais eventos que você ainda tem aí (pode deixar como estão, ou remover se quiser)
     }
 }

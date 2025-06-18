@@ -32,13 +32,13 @@
             pictureBox2 = new PictureBox();
             label1 = new Label();
             panel4 = new Panel();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             pictureBox3 = new PictureBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel4.SuspendLayout();
@@ -59,7 +59,6 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
-            //pictureBox2.Image = Properties.Resources.LogoPrisonADM11;
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(163, 68);
@@ -95,6 +94,36 @@
             panel4.TabIndex = 7;
             panel4.Paint += panel4_Paint;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(387, 68);
+            label4.Name = "label4";
+            label4.Size = new Size(130, 20);
+            label4.TabIndex = 15;
+            label4.Text = "Analise Pendente";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(281, 68);
+            label3.Name = "label3";
+            label3.Size = new Size(45, 20);
+            label3.TabIndex = 14;
+            label3.Text = "Celas";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(113, 68);
+            label2.Name = "label2";
+            label2.Size = new Size(87, 20);
+            label2.TabIndex = 13;
+            label2.Text = "Prisoneiros";
+            // 
             // button3
             // 
             button3.FlatAppearance.MouseDownBackColor = Color.Transparent;
@@ -106,8 +135,9 @@
             button3.Name = "button3";
             button3.Size = new Size(258, 37);
             button3.TabIndex = 12;
-            button3.Text = "Abrir Lista de Prisoneiros";
+            button3.Text = "Prisões e celas";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -147,36 +177,6 @@
             pictureBox3.TabIndex = 7;
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click_1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(113, 68);
-            label2.Name = "label2";
-            label2.Size = new Size(87, 20);
-            label2.TabIndex = 13;
-            label2.Text = "Prisoneiros";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(281, 68);
-            label3.Name = "label3";
-            label3.Size = new Size(45, 20);
-            label3.TabIndex = 14;
-            label3.Text = "Celas";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(387, 68);
-            label4.Name = "label4";
-            label4.Size = new Size(130, 20);
-            label4.TabIndex = 15;
-            label4.Text = "Analise Pendente";
             // 
             // TelaInicial
             // 

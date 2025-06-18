@@ -17,6 +17,9 @@ namespace FatecPoo
         public string Perigo { get; set; }
         public string PerfilPsicologico { get; set; }
         public int Idade
+
+
+
         {
             get
             {

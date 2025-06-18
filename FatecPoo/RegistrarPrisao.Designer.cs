@@ -2,15 +2,8 @@
 {
     partial class RegistrarPrisao
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             panel1 = new Panel();
@@ -124,7 +113,7 @@
             rbMinima.Size = new Size(66, 19);
             rbMinima.TabIndex = 4;
             rbMinima.TabStop = true;
-            rbMinima.Text = "Miníma";
+            rbMinima.Text = "Mínima";
             rbMinima.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -205,5 +194,35 @@
         private Panel panel2;
         private Label label5;
         private Label lblSalvar;
+
+        private void RegistrarPrisao_Load(object sender, EventArgs e)
+        {
+            // Evento de load - pode deixar vazio ou implementar depois
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            // Evento click do label5 - pode deixar vazio ou implementar depois
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            // Evento click do label1 - pode deixar vazio ou implementar depois
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            // Evento CheckedChanged - pode deixar vazio ou implementar depois
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            // Evento click do label3 - pode deixar vazio ou implementar depois
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            // Evento de pintura do panel - pode deixar vazio ou implementar depois
+        }
     }
 }
