@@ -6,12 +6,14 @@ namespace FatecPoo
     {
         List<Pessoa> listadedetentos = new List<Pessoa>();
         private ListaDePrisoneiros telaLista;
+       
         private static int contadorId = 1;
         public Form1(ListaDePrisoneiros tela)
         {
             InitializeComponent();
    
             telaLista = tela;
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -53,6 +55,7 @@ namespace FatecPoo
             };
 
             listadedetentos.Add(p);
+            telaLista.AtualizarLabelTelaInicial();
             telaLista.AdicionarNaLista(p); // Correto: chama o método da tela
             ExameCriminal exame = new ExameCriminal(p);
             exame.ShowDialog();

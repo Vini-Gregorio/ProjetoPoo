@@ -13,8 +13,11 @@ using MySql.Data.MySqlClient;
 
 namespace FatecPoo
 {
+
     public partial class TelaInicial : Form
     {
+        private ListaDePrisoneiros tela;
+        public TelaInicial telaInicial;  // deixa público para ser acessado de fora
         private void AbrirTela(Form Tela)
         {
             Tela.Show(); // ou ShowDialog() se quiser que a tela anterior fique travada
@@ -23,15 +26,57 @@ namespace FatecPoo
         {
 
             InitializeComponent();
-            panel3.Paint += new PaintEventHandler(panel1_Paint);
+            this.FormBorderStyle = FormBorderStyle.None; // remove bordas e barra de título
+            this.WindowState = FormWindowState.Maximized; // maximiza para tela cheia
+            Label ListaPrisoneiros = new Label();
+            ListaPrisoneiros.Text = "";              // sem texto
+            ListaPrisoneiros.Size = new Size(357, 47);
+            ListaPrisoneiros.Location = new Point(119, 559);
+            ListaPrisoneiros.AutoSize = false;       // para respeitar o tamanho definido
+            ListaPrisoneiros.BackColor = Color.Transparent;  // fundo transparente
+            ListaPrisoneiros.Click += ListaPrisoneiros_Click;
 
+            Label VerificarAnalises = new Label();
+            VerificarAnalises.Text = "";              // sem texto
+            VerificarAnalises.Size = new Size(357, 47);
+            VerificarAnalises.Location = new Point(119, 559);
+            VerificarAnalises.AutoSize = false;       // para respeitar o tamanho definido
+            VerificarAnalises.BackColor = Color.Transparent;  // fundo transparente
+            VerificarAnalises.Click += VerificarAnalises_Click;
+
+            Label PrisoesECelas = new Label();
+            PrisoesECelas.Text = "";              // sem texto
+            PrisoesECelas.Size = new Size(357, 47);
+            PrisoesECelas.Location = new Point(119, 559);
+            PrisoesECelas.AutoSize = false;       // para respeitar o tamanho definido
+            PrisoesECelas.BackColor = Color.Transparent;  // fundo transparente
+            PrisoesECelas.Click += PrisoesECelas_Click;
+
+            this.Controls.Add(ListaPrisoneiros);
             MostrarTotalDetentos();
             string RelatorioPen = "50";
             // lblRelatorioPen.Text = $"{RelatorioPen}";
             string CelaDis = "40";
             // lblCelaDis.Text = $"{CelaDis}";
-        }
 
+            PictureBox Sair = new PictureBox();
+            Sair.Name = "Sair";
+            Sair.Location = new Point(1832, 987);
+            Sair.Size = new Size(71, 74);
+            Sair.BackColor = Color.Transparent;
+            Sair.SizeMode = PictureBoxSizeMode.StretchImage;
+            Sair.Cursor = Cursors.Hand; // opcional: mostra cursor de mão ao passar por cima
+                                        // Adiciona o evento de clique
+            Sair.Click += Sair_Click;
+
+            // Adiciona ao formulário
+            this.Controls.Add(Sair);
+
+        }
+        public void AtualizarContador(int quantidade)
+        {
+            label1.Text = quantidade.ToString();
+        }
         private void MostrarTotalDetentos()
         {
             Conexao conexao = new Conexao();
@@ -56,6 +101,21 @@ namespace FatecPoo
                     conexao.FecharConexao();
                 }
             }
+        }
+        private void AtivarTelaCheia()
+        {
+            this.FormBorderStyle = FormBorderStyle.None; // Remove bordas e título
+            this.WindowState = FormWindowState.Normal;   // Importante para aplicar Bounds depois
+            this.Bounds = Screen.PrimaryScreen.Bounds;   // Ocupa toda a tela, inclusive barra de tarefas
+            this.TopMost = true;                         // Garante que fique acima de tudo
+        }
+        private void SairDaTelaCheia()
+        {
+            this.TopMost = false;
+            this.FormBorderStyle = FormBorderStyle.Sizable;
+            this.WindowState = FormWindowState.Normal;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Size = new Size(800, 600); // ou qualquer tamanho que quiser
         }
         private void panel6_Resize(object sender, EventArgs e)
         {
@@ -83,6 +143,17 @@ namespace FatecPoo
         private void Form2_Load(object sender, EventArgs e)
         {
 
+            this.KeyPreview = true;
+            this.KeyDown += (s, e) =>
+            {
+                if (e.KeyCode == Keys.F11)
+                {
+                    if (this.FormBorderStyle == FormBorderStyle.None)
+                        SairDaTelaCheia();
+                    else
+                        AtivarTelaCheia();
+                }
+            };
 
 
         }
@@ -108,11 +179,7 @@ namespace FatecPoo
 
         }
 
-        private void lblListPrisoneiro_Click(object sender, EventArgs e)
-        {
-            ListaDePrisoneiros listaprisoneiros = new ListaDePrisoneiros(); // Instancia a outra tela
-            listaprisoneiros.Show();
-        }
+
 
         private void lblRegPrisioneiro_Click(object sender, EventArgs e)
         {
@@ -121,32 +188,6 @@ namespace FatecPoo
 
 
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-            // Cor personalizada branca
-            Color Branco = Color.FromArgb(224, 224, 224);
-
-            // Define o retângulo que cobre toda a área do painel
-            Rectangle retanguloMaior = new Rectangle(0, 0, panel6.Width, panel6.Height);
-
-            // Cria o gradiente da esquerda para a direita
-            using (LinearGradientBrush brush = new LinearGradientBrush(
-                retanguloMaior,
-                Branco, // Não será usado diretamente com InterpolationColors
-                Color.Black, // Não será usado diretamente com InterpolationColors
-                LinearGradientMode.Horizontal))
-            {
-                // Controla onde cada cor aparece no gradiente
-                ColorBlend blend = new ColorBlend();
-                blend.Colors = new Color[] { Branco, Color.Gray, Color.Black };
-                blend.Positions = new float[] { 0f, 0.3f, 1f }; // Branco até 20%, depois preto
-
-                brush.InterpolationColors = blend;
-                // Preenche o painel com o gradiente
-                e.Graphics.FillRectangle(brush, panel6.ClientRectangle);
-            }
-        }
 
         private void label2_Click_1(object sender, EventArgs e)
         {
@@ -173,32 +214,7 @@ namespace FatecPoo
 
         }
 
-        private void panel3_Paint_1(object sender, PaintEventArgs e)
-        {
 
-            // Definindo as três cores
-            Color topo = Color.PaleVioletRed;
-            Color meio = Color.Red;
-            Color fundo = Color.FromArgb(48, 0, 0); // Vinho
-
-            // Cria o retângulo do tamanho do painel
-            Rectangle rect = panel3.ClientRectangle;
-
-            // Cria o gradiente na vertical
-            using (LinearGradientBrush brush = new LinearGradientBrush(rect, topo, fundo, LinearGradientMode.Vertical))
-            {
-                // Define a transição entre as cores
-                ColorBlend blend = new ColorBlend();
-                blend.Colors = new Color[] { topo, meio, fundo
-};
-                blend.Positions = new float[] { 0.0f, 0.5f, 1.0f }; // Topo = 0%, meio = 50%, fundo = 100%
-
-                brush.InterpolationColors = blend;
-
-                // Preenche o painel com o gradiente
-                e.Graphics.FillRectangle(brush, rect);
-            }
-        }
 
         private void pictureBox4_Click_2(object sender, EventArgs e)
         {
@@ -240,16 +256,51 @@ namespace FatecPoo
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
         {
-            ListaDePrisoneiros listaDePrisoneiros = new ListaDePrisoneiros(); // instanciando a nova tela
-            listaDePrisoneiros.Show(); // abre sem bloquear a tela atual
+
+        }
+        private void ListaPrisoneiros_Click(object sender, EventArgs e)
+        {
+
+            //ListaDePrisao listaDePrisao = new();
+            //listaDePrisao.Show();
+            ListaDePrisoneiros lista = new ListaDePrisoneiros(this); // passando a referência da tela inicial
+            lista.Show();
+        }
+        private void VerificarAnalises_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void PrisoesECelas_Click(object sender, EventArgs e)
+        {
+           
+        }
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void Sair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void groupBox1_Enter_1(object sender, EventArgs e)
         {
-            ListaDePrisao listaDePrisao = new ListaDePrisao();
-            listaDePrisao.Show();
+
+        }
+
+        private void label1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            ListaDePrisao lista = new();
+            lista.Show();
         }
     }
 }

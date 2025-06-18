@@ -1,27 +1,51 @@
 
 using FatecPoo;
-
+using System.Runtime.InteropServices;
 
 
 namespace FatecPoo
 {
+    
+
     public partial class ListaDePrisoneiros : Form
     {
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+        public TelaInicial telaInicial; // essa propriedade precisa estar pública ou acessível
+
+
+
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         private List<Pessoa> listaCompleta = new List<Pessoa>();//lista interna completa
-        public ListaDePrisoneiros()
+        public ListaDePrisoneiros(TelaInicial tela2)
         {
             InitializeComponent();
             // **Aqui adiciona as colunas**
+            this.MouseDown += ListaDePrisoneiros_MouseDown;
             listView1.Columns.Add("ID", 100, HorizontalAlignment.Left);
             listView1.Columns.Add("Nome", 300, HorizontalAlignment.Left);
             listView1.Columns.Add("Idade", 174, HorizontalAlignment.Center);
             listView1.Columns.Add("Nascimento", 174, HorizontalAlignment.Center);
             listView1.Columns.Add("Data de Registro", 174, HorizontalAlignment.Center);
-        }
+            this.FormBorderStyle = FormBorderStyle.None; // remove a borda e barra do Windows
+            telaInicial = tela2;
 
+            telaInicial.label1.Text = listView1.Items.Count.ToString();
+        }
+       
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+        public void AtualizarLabelTelaInicial()
+        {
+        
+                telaInicial?.AtualizarContador(listView1.Items.Count);
+            
         }
         public void AdicionarNaLista(Pessoa p)
         {
@@ -35,6 +59,7 @@ namespace FatecPoo
             item.Tag = p;  // <-- Adicione esta linha!
 
             listView1.Items.Add(item);
+            AtualizarLabelTelaInicial(); // ? garante que o label da tela inicial seja atualizado
         }
 
         private void AtualizarListView(List<Pessoa> pessoas)
@@ -222,6 +247,24 @@ namespace FatecPoo
                     .ToList();
 
                 AtualizarListView(filtrados);
+            }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void ListaDePrisoneiros_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
     }

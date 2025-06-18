@@ -28,94 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            label2 = new Label();
-            txtNome = new TextBox();
-            txtSenha = new TextBox();
-            btnEntrar = new Button();
-            label1 = new Label();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            panel1 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // label2
+            // contextMenuStrip1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(137, 228);
-            label2.Name = "label2";
-            label2.Size = new Size(51, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Senha";
-            label2.TextAlign = ContentAlignment.TopCenter;
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            contextMenuStrip1.Opening += contextMenuStrip1_Opening;
             // 
-            // txtNome
+            // pictureBox1
             // 
-            txtNome.BackColor = Color.Silver;
-            txtNome.BorderStyle = BorderStyle.FixedSingle;
-            txtNome.Location = new Point(43, 168);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(257, 23);
-            txtNome.TabIndex = 2;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Location = new Point(2053, 1219);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(98, 93);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
-            // txtSenha
+            // pictureBox2
             // 
-            txtSenha.BackColor = Color.DarkGray;
-            txtSenha.BorderStyle = BorderStyle.FixedSingle;
-            txtSenha.Location = new Point(43, 275);
-            txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(257, 23);
-            txtSenha.TabIndex = 3;
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Location = new Point(2356, 1393);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(99, 93);
+            pictureBox2.TabIndex = 7;
+            pictureBox2.TabStop = false;
             // 
-            // btnEntrar
+            // panel1
             // 
-            btnEntrar.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnEntrar.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnEntrar.FlatStyle = FlatStyle.Popup;
-            btnEntrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEntrar.Image = (Image)resources.GetObject("btnEntrar.Image");
-            btnEntrar.Location = new Point(119, 349);
-            btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(96, 29);
-            btnEntrar.TabIndex = 5;
-            btnEntrar.Text = "Entrar";
-            btnEntrar.UseVisualStyleBackColor = true;
-            btnEntrar.Click += btnEntrar_Click_1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(137, 124);
-            label1.Name = "label1";
-            label1.Size = new Size(52, 20);
-            label1.TabIndex = 6;
-            label1.Text = "Nome";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            panel1.BackColor = Color.Transparent;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1928, 1066);
+            panel1.TabIndex = 8;
+            panel1.Paint += panel1_Paint;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(351, 450);
-            Controls.Add(label1);
-            Controls.Add(btnEntrar);
-            Controls.Add(txtSenha);
-            Controls.Add(txtNome);
-            Controls.Add(label2);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1924, 1061);
+            Controls.Add(panel1);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Login";
             RightToLeft = RightToLeft.No;
             Text = "Login";
             Load += Login_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-        private Label label2;
-        private TextBox txtNome;
-        private TextBox txtSenha;
-        private Button btnEntrar;
-        private Label label1;
+        private ContextMenuStrip contextMenuStrip1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Panel panel1;
     }
 }
